@@ -25,7 +25,7 @@ object DemoStreamEnvironment {
   def env: StreamExecutionEnvironment = {
     val config = new Configuration()
     // start the web dashboard
-    config.setBoolean(ConfigConstants.LOCAL_START_WEBSERVER, true)
+    config.setBoolean(ConfigConstants.LOCAL_START_WEBSERVER, false)
     // required to start the web dashboard
     config.setString(ConfigConstants.JOB_MANAGER_WEB_LOG_PATH_KEY, "./data/dummyLogFile.txt")
 
